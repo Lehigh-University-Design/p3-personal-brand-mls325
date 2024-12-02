@@ -1,65 +1,68 @@
 
 body {
     margin: 0;
-    overflow: hidden;
-    
-  }
   
+  }
+
   .container {
     display: flex;
     height: 100vh;
-    position: relative;
+
   }
-  
-  .section {
+
+  .section{
     flex: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    background-color: orange;
     align-items: center;
+    justify-content: space-evenly;
     transition: flex 0.5s ease;
     overflow: hidden;
   }
 
-  .content { /* Order & Chaos*/
+  #section-order{
+    background-color: black;
+  }
+  #section-chaos{
+    background-color: white;
+  }
+
+  #section-TTL{
+    content-visibility: hidden;
+  }
+
+  
+  .subText { /* Order & Chaos*/
+    display: flex;
     text-align: center;
     opacity: 1;
-    transition: opacity 0.3s ease;
-  }
-
-  .details { /* Lower */
-  
     flex-direction: column;
-    opacity: 1;
+    transition: opacity 0.3s ease;
+    background-color: blue;
+
   }
 
-  .order {
-   
-    background-color: black;
+
+  #h1-order{
     color: white;
     font-family: 'Poppins', sans-serif;
   }
 
-  .chaos {
-    
-    background-color: white;
+  #h1-chaos{
     color: black;
     font-family: 'Noto', serif;
   }
 
-
-  .order h1{
+  h1{
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
     font-size: 8rem;
   }
-  .chaos h1{
-    font-size: 8rem;
-  }
-
+  
   
 
-  
 
-  
   .section:hover ~ .center-line {
     opacity: 1; /* Show when either section is hovered */
   }
@@ -69,16 +72,21 @@ body {
   /* Hover Effects */
   .section:hover {
     flex: 3;
+    .details {
+      visibility: visible;
+    }
   }
   
-  .section:hover .content {
+  .section:hover .subText {
     opacity: 1;
   }
   
-
-  h1{
-    font-weight: 300;
-    font-size: 1000;
+  .TTL:hover {
+    background-color: lightgreen;
+  }
+  
+  .TTL-line:hover p {
+    opacity: 1;
   }
 
   
