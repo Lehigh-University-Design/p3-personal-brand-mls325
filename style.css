@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    display: grid;
   
   }
 
@@ -55,7 +56,7 @@ body {
 
   h1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-weight: 300;
     font-size: 8rem;
   }
@@ -71,10 +72,10 @@ body {
   
   /* Hover Effects */
   .section:hover {
-    flex: 3;
-    .details {
+    flex: 2;
+    /* .details {
       visibility: visible;
-    }
+    } */
   }
   
   .section:hover .subText {
@@ -89,13 +90,92 @@ body {
     opacity: 1;
   }
 
+
+/*Chaotic Lettering*/
+
+  .fancy > .letter {
+    display: inline-block;
+    align-items: center;
+    transition: transform 350ms ease;
+  }
+
+.fancy:hover > .letter {
+    transition-duration: 800ms;}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.word {
+  color: black;
+  font-size: clamp(2rem, 8vw, 10rem);
+  margin: 0rem;
+  transition: opacity 250ms ease;
+}
+
+#h1-chaos:has(.fancy:hover) .word:not(.fancy:hover) {
+    opacity: 0.2;
+  }
+  
+.fancy:hover > .letter:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+  
+.fancy:hover > .letter:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+}
+  
+.fancy:hover > .letter:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+}
+  
+.fancy:hover > .letter:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+  
+.fancy:hover > .letter:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+  
+/* .fancy:hover > .letter:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+}
+  
+.fancy:hover > .letter:nth-child(7) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+  
+.fancy:hover > .letter:nth-child(8) {
+    transform: translate(0%, 15%) rotate(10deg);
+}
+  
+.fancy:hover > .letter:nth-child(9) {
+    transform: translate(0%, -50%) rotate(8deg);
+}
+  
+.fancy:hover > .letter:nth-child(10) {
+    transform: translate(0%, 15%) rotate(-6deg);
+}
+  
+.fancy:hover > .letter:nth-child(11) {
+    transform: translate(50%, -10%) rotate(-3deg);
+}
+  
+.fancy:hover > .letter:nth-child(12) {
+    transform: translate(120%, -30%) rotate(-10deg);
+} */
+
   
 
+
+/*responsiveness*/
+
   @media (max-width: 768px) {
-    .order h1 {
+    .section #h1-order{
       font-size: 3rem; /* Smaller size for bigger screens */
     }
-    .chaos h1 {
+    .section #h1-chaos {
       font-size: 3rem; /* Smaller size for bigger screens */
     }
   }
