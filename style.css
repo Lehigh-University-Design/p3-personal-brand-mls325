@@ -8,6 +8,7 @@ body {
   .container { /*First Page & Home Page*/
     display: flex;
     height: 100vh;
+    padding: 53px;
 
   }
 
@@ -22,6 +23,9 @@ body {
 
   a{
     text-decoration: none;
+  }
+
+  #linkColor-i{
     color: black;
   }
 
@@ -38,6 +42,7 @@ body {
     font-size: xx-large;
     font-family: 'Poppins', sans-serif;
   }
+
 
 
   #section-order{
@@ -106,17 +111,24 @@ body {
   } */
 
 
+  /*Button Stuff*/
+
   #nav-toggle {
+
     height: 5rem;
     width: 5rem;
-    display: flex;
-    justify-content: baseline;
+
+    align-items: center;
+
     position: sticky;
-    /* z-index: 3;
-    left: 50%;
-    bottom: 3rem; */
+    top: 50rem;
+ 
     transform: translateX(-50%);
-    background-color: black;
+
+    /* background-color: black; */
+    background-image: url(images/Yin_and_yang.png);
+    background-size: 110%;
+    background-position: center;
     border: none;
     border-radius: 5rem;
     outline: none;
