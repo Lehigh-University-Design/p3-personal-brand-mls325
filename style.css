@@ -5,7 +5,7 @@ body {
   
   }
 
-  .container {
+  .container { /*First Page & Home Page*/
     display: flex;
     height: 100vh;
 
@@ -14,12 +14,29 @@ body {
   .section{
     flex: 1;
     display: flex;
-    background-color: orange;
     align-items: center;
     justify-content: space-evenly;
     transition: flex 0.5s ease;
-    overflow: hidden;
+    overflow: auto;
   }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #container-chaos{
+   
+  }
+
+  #container-order{
+
+  }
+
+  #container-instructions{
+    background-color: #22571d;
+  }
+
 
   #section-order{
     background-color: black;
@@ -28,9 +45,9 @@ body {
     background-color: white;
   }
 
-  #section-TTL{
-    content-visibility: hidden;
-  }
+  /* #section-TTL{
+    max-width: 1px;
+  } */
 
   
   .subText { /* Order & Chaos*/
@@ -43,6 +60,12 @@ body {
 
   }
 
+  h1{
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    font-size: 8rem;
+  }
 
   #h1-order{
     color: white;
@@ -54,41 +77,31 @@ body {
     font-family: 'Noto', serif;
   }
 
-  h1{
-    display: flex;
-    flex-direction: row;
-    font-weight: 300;
-    font-size: 8rem;
-  }
-  
-  
+  /*Hover Effect */
 
-
-  .section:hover ~ .center-line {
-    opacity: 1; /* Show when either section is hovered */
-  }
-
-
-  
-  /* Hover Effects */
   .section:hover {
     flex: 2;
     /* .details {
       visibility: visible;
     } */
   }
-  
-  .section:hover .subText {
-    opacity: 1;
+
+  .section:hover .TTL{
+
   }
   
-  .TTL:hover {
+  /* .section:hover .subText {
+    opacity: 1;
+  }
+   */
+  /* .TTL:hover {
     background-color: lightgreen;
   }
   
   .TTL-line:hover p {
     opacity: 1;
-  }
+  } */
+
 
 
 /*Chaotic Lettering*/
@@ -100,7 +113,7 @@ body {
   }
 
 .fancy:hover > .letter {
-    transition-duration: 800ms;}
+    transition-duration: 500ms;} /*exploding time*/
 
 .line {
     display: flex;
@@ -114,9 +127,6 @@ body {
   transition: opacity 250ms ease;
 }
 
-#h1-chaos:has(.fancy:hover) .word:not(.fancy:hover) {
-    opacity: 0.2;
-  }
   
 .fancy:hover > .letter:nth-child(1) {
     transform: translate(-80%, 60%) rotate(8deg);
@@ -169,7 +179,9 @@ body {
   
 
 
-/*responsiveness*/
+
+
+/*Responsiveness*/
 
   @media (max-width: 768px) {
     .section #h1-order{
