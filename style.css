@@ -23,6 +23,7 @@ body {
 
   a{
     text-decoration: none;
+    color: black;
   }
 
   #linkColor-i{
@@ -118,20 +119,17 @@ body {
     height: 5rem;
     width: 5rem;
 
-    align-items: center;
-
     position: sticky;
     top: 50rem;
  
     transform: translateX(-50%);
 
-    /* background-color: black; */
-    background-image: url(images/Yin_and_yang.png);
-    background-size: 110%;
-    background-position: center;
     border: none;
-    border-radius: 5rem;
+    border-radius: 3rem;
     outline: none;
+    background-color: #22571d;
+
+    /* background-color: black; */
     box-shadow: 0rem 0rem 4rem rgba(0 0 0 / 35%);
     cursor: pointer;
     transition: transform, background-color;
@@ -139,6 +137,19 @@ body {
     transition-duration: 400ms;
   }
 
+  .yin-yang-container {
+    display: block;
+    width: 100%; /* Allow the SVG to fill its container */
+    aspect-ratio: 1; /* Maintain square aspect ratio */
+  }
+  
+  svg {
+    width: 100%; /* Makes the SVG fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent any unwanted extra space below */
+  }
+
+  
   #nav-toggle:hover {
     transform: translateX(-50%) scale(1.04);
   }
@@ -243,5 +254,8 @@ body {
     .section #h1-chaos {
       font-size: 3rem; /* Smaller size for bigger screens */
     }
+
+    .yin-yang-container {
+      max-width: 200px;
+    }
   }
-  
