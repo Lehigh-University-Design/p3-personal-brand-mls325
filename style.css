@@ -35,6 +35,8 @@ body {
 
   #container-instructions{
     background-color: #22571d;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
   }
 
 
@@ -70,6 +72,7 @@ body {
   #h1-order{
     color: white;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
 
   #h1-chaos{
@@ -102,6 +105,44 @@ body {
     opacity: 1;
   } */
 
+
+  #nav-toggle {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: baseline;
+    position: sticky;
+    /* z-index: 3;
+    left: 50%;
+    bottom: 3rem; */
+    transform: translateX(-50%);
+    background-color: black;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    box-shadow: 0rem 0rem 4rem rgba(0 0 0 / 35%);
+    cursor: pointer;
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+  }
+
+  #nav-toggle:hover {
+    transform: translateX(-50%) scale(1.04);
+  }
+  
+  #nav-toggle:active {
+    transform: translateX(-50%) scale(0.96);
+  }
+  
+  body[data-nav="true"] > #nav-toggle {
+    background-color: rgb(85, 130, 149);
+  }
+  
+  body:not([data-nav="true"]) > #nav-toggle:hover > .open {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 
 
 /*Chaotic Lettering*/
