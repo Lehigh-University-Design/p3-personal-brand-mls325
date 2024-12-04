@@ -8,8 +8,12 @@ body {
   .container { /*First Page & Home Page*/
     display: flex;
     height: 100vh;
-    padding: 53px;
+    padding-top: 15vh;
 
+  }
+
+  #container-homepage{
+    padding: 0;
   }
 
   .section{
@@ -120,7 +124,8 @@ body {
     width: 5rem;
 
     position: sticky;
-    top: 50rem;
+    top: 85vh;
+    left: 15vw;
  
     transform: translateX(-50%);
 
