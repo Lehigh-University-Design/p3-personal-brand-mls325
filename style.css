@@ -5,10 +5,10 @@ body {
   
   }
 
-  .container { /*First Page & Home Page*/
+  .container { /*First Page & Instructions Page*/
     display: flex;
     height: 100vh;
-    padding-top: 15vh;
+    /* padding-top: 15vh; */
 
   }
 
@@ -41,6 +41,41 @@ body {
   #container-order{
 
   }
+
+  /* Scroll down arrow styling */
+  
+.scroll-down-arrow {
+  font-size: 3rem;
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  position:absolute;
+  bottom: 20px;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
+#scroll{
+  
+
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-3px);
+  }
+}
 
   #container-instructions{
     background-color: #22571d;

@@ -16,3 +16,10 @@ const enhance = id => {
   }
   
   enhance("h1-chaos");
+
+  document.querySelector('.scroll-down-arrow').addEventListener('click', () => {
+    window.scroll({
+        top: document.querySelector('#container-instructions').offsetTop,
+        behavior: 'smooth'
+    });
+});
