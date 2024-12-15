@@ -136,24 +136,8 @@ body {
     } */
   }
 
-  .section:hover .TTL{
 
-  }
-  
-  /* .section:hover .subText {
-    opacity: 1;
-  }
-   */
-  /* .TTL:hover {
-    background-color: lightgreen;
-  }
-  
-  .TTL-line:hover p {
-    opacity: 1;
-  } */
-
-
-  /*Button Stuff*/
+  /*Yin Yang Button*/
 
   #nav-toggle {
 
@@ -253,34 +237,7 @@ body {
 .fancy:hover > .letter:nth-child(5) {
     transform: translate(0%, -20%) rotate(5deg);
 }
-  
-/* .fancy:hover > .letter:nth-child(6) {
-    transform: translate(0%, 20%) rotate(-3deg);
-}
-  
-.fancy:hover > .letter:nth-child(7) {
-    transform: translate(0%, -40%) rotate(-5deg);
-}
-  
-.fancy:hover > .letter:nth-child(8) {
-    transform: translate(0%, 15%) rotate(10deg);
-}
-  
-.fancy:hover > .letter:nth-child(9) {
-    transform: translate(0%, -50%) rotate(8deg);
-}
-  
-.fancy:hover > .letter:nth-child(10) {
-    transform: translate(0%, 15%) rotate(-6deg);
-}
-  
-.fancy:hover > .letter:nth-child(11) {
-    transform: translate(50%, -10%) rotate(-3deg);
-}
-  
-.fancy:hover > .letter:nth-child(12) {
-    transform: translate(120%, -30%) rotate(-10deg);
-} */
+
 
   
 
