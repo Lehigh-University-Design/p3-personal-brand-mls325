@@ -51,10 +51,10 @@ body {
   margin-top: 20px;
   animation: bounce 2s infinite;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   align-items: baseline;
   bottom: 20px;
-  left: 47.37vw;
+  left: 44.78vw;
   transform: translateX(-50%);
 }
 
@@ -302,7 +302,7 @@ body {
     }
 
     .scroll-down-arrow{
-      left: 44.30vw;
+      left: 39.24vw;
     }
     #scroll{
       font-size: 1rem;
